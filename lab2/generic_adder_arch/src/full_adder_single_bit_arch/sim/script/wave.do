@@ -1,12 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /full_adder_single_bit_arch_tb/uut/a
-add wave -noupdate /full_adder_single_bit_arch_tb/uut/b
-add wave -noupdate /full_adder_single_bit_arch_tb/uut/cin
-add wave -noupdate /full_adder_single_bit_arch_tb/uut/sum
-add wave -noupdate /full_adder_single_bit_arch_tb/uut/cout
+add wave -noupdate -expand -group {New Group} -color {Violet Red} -itemcolor Maroon /full_adder_single_bit_arch_tb/uut/a
+add wave -noupdate -expand -group {New Group} -color {Violet Red} -itemcolor Maroon /full_adder_single_bit_arch_tb/uut/b
+add wave -noupdate -expand -group {New Group} -color Yellow -itemcolor Maroon /full_adder_single_bit_arch_tb/uut/cin
+add wave -noupdate -expand -group {New Group} -color Yellow -itemcolor Maroon /full_adder_single_bit_arch_tb/uut/sum
+add wave -noupdate -expand -group {New Group} -color Yellow -itemcolor Maroon /full_adder_single_bit_arch_tb/uut/cout
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1725 ns} 0}
+WaveRestoreCursors {{Cursor 1} {14 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 112
 configure wave -valuecolwidth 100
@@ -22,4 +22,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {2485 ns}
+WaveRestoreZoom {0 ns} {105 ns}
